@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.darrenpc.hci_imp.NutritionResultsActivity"
+    tools:showIn="@layout/activity_nutrition_results">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Your Progress so far!"
+        android:textSize = "20dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bar_chart"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="Weekly Summary" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/nutri_bar_chart"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"></com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Week48/52" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_consumed"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="17dp"
+        android:text="Calories left to consume:" />
+
+    <TextView
+        android:id="@+id/tv_consumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="13dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Return to Home page" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_consumed"
+        android:layout_alignBottom="@+id/tv_consumed"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="kCal/3120kCal" />
+</RelativeLayout>

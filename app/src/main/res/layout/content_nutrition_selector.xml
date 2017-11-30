@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.darrenpc.hci_imp.NutritionSelectorActivity"
+    tools:showIn="@layout/activity_nutrition_selector">
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="68dp"
+        android:text="You have selected:" />
+
+    <TextView
+        android:id="@+id/tv_selected_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_selected"
+        android:layout_below="@+id/tv_selected"
+        android:layout_marginTop="26dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_calories_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_selected_food"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="169dp"
+        android:layout_toEndOf="@+id/tv_selected_food"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spinner_meals"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_calories_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:entries = "@array/meal_array"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_calories_select"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="24dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_submit"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/btn_submit"
+        android:text="Cancel" />
+
+
+</RelativeLayout>

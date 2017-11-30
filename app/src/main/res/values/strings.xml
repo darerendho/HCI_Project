@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">HCI_Imp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="button_return_home_page">Return to Home Page</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_physical">PhysicalActivity</string>
+    <string name="title_activity_phy_results">PhyResultsActivity</string>
+    <string name="title_activity_nutrition_journal">NutritionJournalActivity</string>
+    <string name="food_prompt">Choose your dish</string>
+
+    <string-array name="food_array">
+        <item>Chicken Rice</item>
+        <item>Ban Mian</item>
+        <item>Fish Ball Noodles</item>
+        <item>Yong Tau Foo</item>
+        <item>Economical rice</item>
+    </string-array>
+
+    <string-array name="meal_array">
+        <item>Breakfast</item>
+        <item>Brunch</item>
+        <item>Lunch</item>
+        <item>Tea Break</item>
+        <item>Dinner</item>
+        <item>Supper</item>
+    </string-array>
+
+    <string name="title_activity_nutrition_selector">NutritionSelectorActivity</string>
+    <string name="title_activity_nutrition_results">NutritionResultsActivity</string>
+
+</resources>
